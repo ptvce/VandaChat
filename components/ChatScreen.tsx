@@ -120,29 +120,29 @@ const ChatScreen = () => {
             });
         }
 
-        async function RetryRequest(maxRetries = 3) {
-            let retries = 0;
-            while (retries < maxRetries) {
+        // async function RetryRequest(maxRetries = 3) {
+        //     let retries = 0;
+        //     while (retries < maxRetries) {
 
-            }
-            try {
-                const response = await axios.post(`https://app.nativenotify.com/api/indie/notification`, {
-                    subID: `${friendEmail}`,
-                    appId: 23174,
-                    appToken: 'j4h5Oj9tLmoBgdDOzo7U9r',
-                    title: `${sender} - VandaChat`,
-                    message: `${message}`
-                });
-                console.log('notification');
-                return response
+        //     }
+        //     try {
+        //         const response = await axios.post(`https://app.nativenotify.com/api/indie/notification`, {
+        //             subID: `${friendEmail}`,
+        //             appId: 23174,
+        //             appToken: 'j4h5Oj9tLmoBgdDOzo7U9r',
+        //             title: `${sender} - VandaChat`,
+        //             message: `${message}`
+        //         });
+        //         console.log('notification');
+        //         return response
 
-            } catch (error) {
-                console.log('request failed, retrying ...')
-                retries++
-            }
-        }
+        //     } catch (error) {
+        //         console.log('request failed, retrying ...')
+        //         retries++
+        //     }
+        // }
 
-        RetryRequest();
+        // RetryRequest();
         setMessage('');
 
     };
@@ -163,7 +163,7 @@ const ChatScreen = () => {
         // <KeyboardAwareScrollView>
 
         <ThemedView style={{ flex: 1 }}>
-            {messages[0] !== undefined && (
+            {/* {messages[0] !== undefined && ( */}
                 <ThemedView style={{ flex: 1 }}>
                     <KeyboardAwareFlatList initialNumToRender={10} ref={flatListRef} onContentSizeChange={() => {
                         if (isListReady)
@@ -182,7 +182,7 @@ const ChatScreen = () => {
                         </TouchableOpacity>
                     </ThemedView>
                 </ThemedView>
-            )}
+             {/* )} */}
         </ThemedView>
 
     )

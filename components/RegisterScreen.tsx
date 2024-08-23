@@ -7,6 +7,7 @@ import {createUserWithEmailAndPassword} from 'firebase/auth';
 import {auth, db} from '../firebase/config';
 import { useNavigation } from '@react-navigation/native';
 import { addDoc, collection } from 'firebase/firestore';
+import { processAuthError } from '@/utils/utils';
 
 
 export type RegisterScreenProps = ViewProps & {
@@ -33,7 +34,7 @@ const onHandleRegister = () => {
           emailId: res.user.email,
           username: res.user.email?.split('@')[0],
         })
-      });
+      }).catch((error) => processAuthError(error));
     }
   }
 }
