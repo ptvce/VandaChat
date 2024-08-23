@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "741182960843",
+    "project_id": "vandachat-61749",
+    "storage_bucket": "vandachat-61749.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741182960843:android:fd68b7bca52a1ba0da174e",
+        "android_client_info": {
+          "package_name": "com.vanda.vandachat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcURxPbI3XFWeu9p9gvmILLOepm0PAXsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
