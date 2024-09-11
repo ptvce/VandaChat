@@ -34,7 +34,7 @@ export function LoginScreen({ style, lightColor, darkColor, ...otherProps }: Log
 
 
   return (
-    <>
+    <ThemedView style={{ justifyContent: 'center', alignItems: 'center' }}>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="subtitle">Sign in</ThemedText>
       </ThemedView>
@@ -59,7 +59,7 @@ export function LoginScreen({ style, lightColor, darkColor, ...otherProps }: Log
         <ThemedText type="default">Don't have an account?</ThemedText>
         <TouchableOpacity onPress={() => navigation.navigate("Register" as never)}><ThemedText type="link">Sign up</ThemedText></TouchableOpacity>
       </ThemedView>
-    </>
+    </ThemedView>
   );
 }
 
@@ -91,11 +91,10 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: 'gray',
-    width: 200,
+    width: 100,
     height: 30,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 20,
-    marginLeft: 90,
+    alignContent: 'center',
+    textAlign: 'center',
+    textAlignVertical: 'center',
   },
 });

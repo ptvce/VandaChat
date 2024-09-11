@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity, Image, KeyboardAvoidingView, StyleSheet, Platform, FlatList } from 'react-native'
+import { View, Text,  TextInput, TouchableOpacity, Image, KeyboardAvoidingView, StyleSheet, Platform, FlatList } from 'react-native'
 import { KeyboardAwareFlatList, KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import React, { useContext, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { ThemedView } from './ThemedView'
@@ -182,6 +182,7 @@ const ChatScreen = () => {
                         </TouchableOpacity>
                     </ThemedView>
                 </ThemedView>
+               
              {/* )} */}
         </ThemedView>
 
